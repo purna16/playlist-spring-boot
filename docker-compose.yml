@@ -1,0 +1,28 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    container_name: postgres-container
+    environment:
+      POSTGRES_USER: candidate
+      POSTGRES_PASSWORD: candidate
+      POSTGRES_DB: playlist
+    ports:
+      - "5432:5432"
+    networks:
+      - backend-network
+
+  backend:
+    image: purna16/backend-image
+    container_name: backend-container
+    ports:
+      - "3000:3000"
+    links:
+      - postgres:postgres
+    networks:
+      - backend-network
+
+networks:
+  backend-network:
+    driver: bridge
+

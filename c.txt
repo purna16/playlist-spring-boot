@@ -1,0 +1,31 @@
+nstructions for Testing the Application
+
+Objective: Evaluate the deployment of the application using Docker within a professional context.
+
+Instructions:
+
+Application Code:
+
+Develop the application code according to the specifications provided.
+Ensure that the application is complete and functional before proceeding to the next steps.
+Docker Installation and Image Creation:
+
+Install Docker on your local machine. You can download it from the official Docker website.
+Using Docker, create a Docker image of your application.
+
+DockerHub Account and Repository:
+
+Create an account on DockerHub (https://hub.docker.com/).
+Once you have an account, create a public repository. It's important that the repository is public to facilitate seamless evaluation.
+Push the Docker image you created in the previous step to this newly created repository.
+Docker Compose:
+
+You will receive a Docker Compose file.
+Open the Docker Compose file and specify the image name of the Docker image you pushed to DockerHub in the appropriate section of the file.
+
+
+Evaluation Criteria:
+
+Your performance will be evaluated based on the following criteria:
+
+Correctness: The application should run without errors or issues. It should be accessible at the specified port on localhost
