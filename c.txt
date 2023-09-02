@@ -1,4 +1,4 @@
-nstructions for Testing the Application
+instructions for Testing the Application
 
 Objective: Evaluate the deployment of the application using Docker within a professional context.
 
